@@ -6,8 +6,18 @@
     <title>DevBoard</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/5e93069130.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<style>
+  .poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
   </head>
-  <body class="bg-[#F4F7FF] p-6">
+  <body class="bg-[#F4F7FF] p-6 poppins-regular text-[#00303C]">
     <!-- navbar -->
     <div>
     
@@ -36,28 +46,148 @@
       class="max-w-7xl mx-auto bg-white  rounded-lg p-6 flex flex-col md:flex-row"
     >
 
-   
       <div class="w-full md:w-3/4 pr-6">
        
          <!-- task overview -->
          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <div class="bg-gray-100 p-4 rounded-lg flex items-center gap-6">
+          <div class="bg-[#F4F7FF] p-4 rounded-lg flex items-center gap-6">
             <i class="fa-solid text-3xl text-blue-500 fa-square-check"></i>
             <div>
                   <p class="text-[#00303C] opacity-[80%]">Task Assigned</p>
                   <p id="taskAssigned" class="text-3xl text-[#00303C] font-bold">06</p>
               </div>
           </div>
-          <div class="bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] flex gap-[22px] items-center text-white p-4 rounded-lg text-center">
-            <img class="w-[71px]" src="./assets/board.png" alt="">
-              <p class="font-semibold">Discover Something New Today!</p>
+          <div class="bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] flex gap-[22px] items-center text-white p-4 rounded-lg">
+            <img class="w-[60px]" src="./assets/board.png" alt="">
+              <p class="">Discover Something New Today!</p>
           </div>
-          <div class="bg-gray-100 p-6 flex items-center gap-4 rounded-lg text-[22px] text-center">
+          <div class="bg-[#F4F7FF] p-6 flex items-center gap-4 rounded-lg text-[22px] text-center">
             <img src="./assets/calender.png" alt="">
               <p>Wed,<br><span class="font-bold">Jul 28 2025</span></p>
           </div>
       </div>
-      
+      <!-- Task List -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-6" id="taskList">
+        <!-- shopease -->
+        <div class="bg-[#F4F7FF] p-4 rounded-lg shadow">
+            <div class="py-2 px-4 bg-white rounded-lg w-fit mb-4">
+              <h3 class="text-base">ShopEase</h3>
+            </div>
+            <h2 class="text-lg font-medium mb-4">Fix Mobile Button Issue</h2>
+            <div class="bg-white p-4 rounded-lg">
+              <p class="text-sm opacity-[50%] text-[#00303C]">Debug using Chrome DevTools...</p>
+
+            </div>
+            <div class="flex justify-between items-center mt-4">
+              <div>
+                <p class="text-sm text-gray-500">Deadline:</p>
+                <h4 class="text-[#00303C] text-base font-medium">21 March 2025</h4>
+              </div>
+                
+                <button class="bg-blue-500 text-white px-3 py-1 rounded-md complete-task">Complete</button>
+            </div>
+        </div>
+        <!-- CloudSync -->
+        <div class="bg-[#F4F7FF] p-4 rounded-lg shadow">
+            <div class="py-2 px-4 bg-white rounded-lg w-fit mb-4">
+              <h3 class="text-base">CloudSync</h3>
+            </div>
+            <h2 class="text-lg font-medium mb-4">Add Dark Mode</h2>
+            <div class="bg-white p-4 rounded-lg">
+              <p class="text-sm opacity-[50%] text-[#00303C]">Debug using Chrome DevTools...</p>
+
+            </div>
+            <div class="flex justify-between items-center mt-4">
+              <div>
+                <p class="text-sm text-gray-500">Deadline:</p>
+                <h4 class="text-[#00303C] text-base font-medium">21 March 2025</h4>
+              </div>
+                
+                <button class="bg-blue-500 text-white px-3 py-1 rounded-md complete-task">Complete</button>
+            </div>
+        </div>
+
+        <!-- SwiftPay -->
+        <div class="bg-[#F4F7FF] p-4 rounded-lg shadow">
+            <div class="py-2 px-4 bg-white rounded-lg w-fit mb-4">
+              <h3 class="text-base">SwiftPay</h3>
+            </div>
+            <h2 class="text-lg font-medium mb-4">Optimize  Home page </h2>
+            <div class="bg-white p-4 rounded-lg">
+              <p class="text-sm opacity-[50%] text-[#00303C]">Debug using Chrome DevTools...</p>
+
+            </div>
+            <div class="flex justify-between items-center mt-4">
+              <div>
+                <p class="text-sm text-gray-500">Deadline:</p>
+                <h4 class="text-[#00303C] text-base font-medium">21 March 2025</h4>
+              </div>
+                
+                <button class="bg-blue-500 text-white px-3 py-1 rounded-md complete-task">Complete</button>
+            </div>
+        </div>
+
+        <!-- Meta -->
+        <div class="bg-[#F4F7FF] p-4 rounded-lg shadow">
+            <div class="py-2 px-4 bg-white rounded-lg w-fit mb-4">
+              <h3 class="text-base">Meta</h3>
+            </div>
+            <h2 class="text-lg font-medium mb-4">Add new emoji 🤲</h2>
+            <div class="bg-white p-4 rounded-lg">
+              <p class="text-sm opacity-[50%] text-[#00303C]">Debug using Chrome DevTools...</p>
+
+            </div>
+            <div class="flex justify-between items-center mt-4">
+              <div>
+                <p class="text-sm text-gray-500">Deadline:</p>
+                <h4 class="text-[#00303C] text-base font-medium">21 March 2025</h4>
+              </div>
+                
+                <button class="bg-blue-500 text-white px-3 py-1 rounded-md complete-task">Complete</button>
+            </div>
+        </div>
+
+
+        <!-- Google LLC -->
+        <div class="bg-[#F4F7FF] p-4 rounded-lg shadow">
+            <div class="py-2 px-4 bg-white rounded-lg w-fit mb-4">
+              <h3 class="text-base">Google LLC</h3>
+            </div>
+            <h2 class="text-lg font-medium mb-4">Integrate OpenAI API</h2>
+            <div class="bg-white p-4 rounded-lg">
+              <p class="text-sm opacity-[50%] text-[#00303C]">Debug using Chrome DevTools...</p>
+
+            </div>
+            <div class="flex justify-between items-center mt-4">
+              <div>
+                <p class="text-sm text-gray-500">Deadline:</p>
+                <h4 class="text-[#00303C] text-base font-medium">21 March 2025</h4>
+              </div>
+                
+                <button class="bg-blue-500 text-white px-3 py-1 rounded-md complete-task">Complete</button>
+            </div>
+        </div>
+        <!-- Glassdoor -->
+        <div class="bg-[#F4F7FF] p-4 rounded-lg shadow">
+            <div class="py-2 px-4 bg-white rounded-lg w-fit mb-4">
+              <h3 class="text-base">Glassdoor</h3>
+            </div>
+            <h2 class="text-lg font-medium mb-4">Improve Job searching </h2>
+            <div class="bg-white p-4 rounded-lg">
+              <p class="text-sm opacity-[50%] text-[#00303C]">Debug using Chrome DevTools...</p>
+
+            </div>
+            <div class="flex justify-between items-center mt-4">
+              <div>
+                <p class="text-sm text-gray-500">Deadline:</p>
+                <h4 class="text-[#00303C] text-base font-medium">21 March 2025</h4>
+              </div>
+                
+                <button class="bg-blue-500 text-white px-3 py-1 rounded-md complete-task">Complete</button>
+            </div>
+        </div>
+        
+    </div>
       
          
       </div>
