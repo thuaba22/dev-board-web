@@ -1,17 +1,38 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dev Board</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@5"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>DevBoard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/5e93069130.js" crossorigin="anonymous"></script>
   </head>
-  <body>
-    <h1>hello</h1>
+  <body class="bg-gray-100 p-6">
+    <div
+      class="max-w-7xl mx-auto bg-white  rounded-lg p-6 flex flex-col md:flex-row"
+    >
+      <div class="w-full md:w-3/4 pr-6">
+        <!-- Header -->
+        <div class="flex justify-between items-center">
+          <div class="flex items-center gap-3">
+            <img src="./assets/logo.png" alt="">
+          <h1 class="text-3xl font-bold flex items-center">
+            
+            Dev<span class="text-blue-500">Board</span>
+          </h1>
+          </div>
+          <div class="flex items-center space-x-4">
+            <div class="bg-[#F4F7FF] rounded-lg p-2">
+              <i class="fa-solid text-3xl text-blue-500 fa-square-check"></i>
+              <span id="taskCompleted" class="text-3xl font-bold">23</span>
+            </div>
+            
+            <img class="w-6 h-6" src="./assets/theme-btn.png" alt="" />
+          </div>
+        </div>
+
+       
+
+    <script src="./scripts/index.js"></script>
   </body>
 </html>
