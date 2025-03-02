@@ -26,12 +26,12 @@
          <img src="./assets/logo.png" alt="">
        <h1 class="text-3xl font-bold flex items-center">
          
-         Dev<span class="text-blue-500">Board</span>
+         Dev<span class="text-[#3752FD]">Board</span>
        </h1>
        </div>
        <div class="flex items-center space-x-4">
          <div class="bg-[#F4F7FF] rounded-lg p-2">
-           <i class="fa-solid text-3xl text-blue-500 fa-square-check"></i>
+           <i class="fa-solid text-3xl text-[#3752FD] fa-square-check"></i>
            <span id="taskCompleted" class="text-3xl font-bold">23</span>
          </div>
          
@@ -51,7 +51,7 @@
          <!-- task overview -->
          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
           <div class="bg-[#F4F7FF] p-4 rounded-lg flex items-center gap-6">
-            <i class="fa-solid text-3xl text-blue-500 fa-square-check"></i>
+            <i class="fa-solid text-3xl text-[#3752FD] fa-square-check"></i>
             <div>
                   <p class="text-[#00303C] opacity-[80%]">Task Assigned</p>
                   <p id="taskAssigned" class="text-3xl text-[#00303C] font-bold">06</p>
@@ -84,7 +84,7 @@
                 <h4 class="text-[#00303C] text-base font-medium">21 March 2025</h4>
               </div>
                 
-                <button class="bg-blue-500 text-white px-3 py-1 rounded-md complete-task">Complete</button>
+                <button class="bg-[#3752FD] text-white px-3 py-1 rounded-md complete-task">Completed</button>
             </div>
         </div>
         <!-- CloudSync -->
@@ -103,7 +103,7 @@
                 <h4 class="text-[#00303C] text-base font-medium">21 March 2025</h4>
               </div>
                 
-                <button class="bg-blue-500 text-white px-3 py-1 rounded-md complete-task">Complete</button>
+                <button class="bg-[#3752FD] text-white px-3 py-1 rounded-md complete-task">Completed</button>
             </div>
         </div>
 
@@ -123,7 +123,7 @@
                 <h4 class="text-[#00303C] text-base font-medium">21 March 2025</h4>
               </div>
                 
-                <button class="bg-blue-500 text-white px-3 py-1 rounded-md complete-task">Complete</button>
+                <button class="bg-[#3752FD] text-white px-3 py-1 rounded-md complete-task">Completed</button>
             </div>
         </div>
 
@@ -143,7 +143,7 @@
                 <h4 class="text-[#00303C] text-base font-medium">21 March 2025</h4>
               </div>
                 
-                <button class="bg-blue-500 text-white px-3 py-1 rounded-md complete-task">Complete</button>
+                <button class="bg-[#3752FD] text-white px-3 py-1 rounded-md complete-task">Completed</button>
             </div>
         </div>
 
@@ -164,7 +164,7 @@
                 <h4 class="text-[#00303C] text-base font-medium">21 March 2025</h4>
               </div>
                 
-                <button class="bg-blue-500 text-white px-3 py-1 rounded-md complete-task">Complete</button>
+                <button class="bg-[#3752FD] text-white px-3 py-1 rounded-md complete-task">Completed</button>
             </div>
         </div>
         <!-- Glassdoor -->
@@ -183,16 +183,31 @@
                 <h4 class="text-[#00303C] text-base font-medium">21 March 2025</h4>
               </div>
                 
-                <button class="bg-blue-500 text-white px-3 py-1 rounded-md complete-task">Complete</button>
+                <button class="bg-[#3752FD] text-white px-3 py-1 rounded-md complete-task">Completed</button>
             </div>
         </div>
         
     </div>
+
+
+    
       
          
       </div>
 
-       
+               <!-- activity log -->
+               <div class="w-full md:w-1/4 bg-[#F4F7FF] p-4 rounded-lg shadow mt-6 md:mt-0">
+                <div class="flex flex-col justify-center items-center mb-4 gap-4">
+                  <div class="flex gap-4">
+                    <img class="w-[24px]" src="./assets/activity.png" alt="">
+                    <h2 class="text-lg font-bold">Activity Log</h2>
+
+                  </div>
+                    <button id="clearLog" class="bg-[#3752FD] text-white px-3 py-1 rounded-md">Clear History</button>
+                </div>
+                <div class="text-sm text-gray-600" id="activityLog">
+                </div>
+            </div>
 
     <script src="./scripts/index.js"></script>
   </body>
