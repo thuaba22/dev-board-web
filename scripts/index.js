@@ -48,11 +48,16 @@ completeButtons.forEach((button) => {
       "rounded-md",
       "shadow"
     );
-    activityLogElement.prepend(newLog);
+    activityLogElement.append(newLog);
 
     button.disabled = true;
     button.classList.add("opacity-[20%]");
     button.textContent = "Completed";
+    if (parseInt(taskAssignedElement.textContent) === 0) {
+      setTimeout(() => {
+        alert("Congrats!!! You have completed all the current task");
+      }, 500);
+    }
   });
 });
 

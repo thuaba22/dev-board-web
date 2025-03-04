@@ -17,7 +17,7 @@
 }
 </style>
   </head>
-  <body class="bg-[#F4F7FF] p-6 poppins-regular text-[#00303C]">
+  <body id="bodyBackground" class="bg-[#F4F7FF] p-6 poppins-regular text-[#00303C]">
     <!-- navbar -->
     <div>
     
@@ -34,8 +34,10 @@
            <i class="fa-solid text-3xl text-[#3752FD] fa-square-check"></i>
            <span id="taskCompleted" class="text-3xl font-bold">23</span>
          </div>
-         
-         <img class="w-8 h-8" src="./assets/theme-btn.png" alt="" />
+         <div id="theme-button">
+          <img class="w-8 h-8" src="./assets/theme-btn.png" alt=""  onclick="changeTheme()"/>
+
+         </div>
        </div>
      </div>
 
@@ -205,5 +207,6 @@
             </div>
 
     <script src="./scripts/index.js"></script>
+    <script src="./scripts/theme.js"></script>
   </body>
 </html>
