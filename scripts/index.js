@@ -2,6 +2,18 @@ document.getElementById("discover-btn").addEventListener("click", function () {
   window.location.href = "./blogs.html";
 });
 
+// current Date showing
+const today = new Date();
+const formattedDate = today.toLocaleDateString("en-US", {
+  weekday: "short",
+  month: "short",
+  day: "2-digit",
+  year: "numeric",
+});
+
+document.getElementById("currentDate").innerHTML =
+  formattedDate.replace(",", "<br><span class='font-bold'>") + "</span>";
+
 const taskCompletedElement = document.getElementById("taskCompleted");
 const taskAssignedElement = document.getElementById("taskAssigned");
 const activityLogElement = document.getElementById("activityLog");
